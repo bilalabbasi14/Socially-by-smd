@@ -31,7 +31,7 @@ class deflogin : AppCompatActivity() {
             startActivity(switchIntent)
         }
 
-        val loginBtn =findViewById<Button>(R.id.Login)
+        val loginBtn =findViewById<Button>(R.id.Logintofeed)
         loginBtn.setOnClickListener {
             val loginIntent= Intent(this, feed::class.java)
             startActivity(loginIntent)

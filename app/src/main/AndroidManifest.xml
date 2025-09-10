@@ -21,6 +21,9 @@
             android:name=".call"
             android:exported="false" />
         <activity
+            android:name=".feed"
+            android:exported="false" />
+        <activity
             android:name=".login"
             android:exported="false" />
         <activity

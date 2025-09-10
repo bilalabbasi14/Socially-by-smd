@@ -39,7 +39,7 @@
     android:layout_marginTop="15dp">
 </TextView>
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Login"
+        android:id="@+id/Logintofeed"
         android:layout_width="320dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
@@ -58,7 +58,7 @@
         android:id="@+id/switchacc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/Login"
+        android:layout_below="@id/Logintofeed"
         android:text="Switch accounts"
         android:layout_centerHorizontal="true"
         android:textColor="#9B6462"
