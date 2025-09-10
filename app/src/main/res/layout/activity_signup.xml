@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8E3F42"
+    tools:context=".Page2">
+    <TextView
+        android:id="@+id/Socially"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Socially"
+        android:layout_marginTop="30dp"
+        android:textSize="36dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white">
+
+    </TextView>
+    <ImageView
+        android:id="@+id/back"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/signuptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create An Account and SignUp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/Socially"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:textSize="15dp">
+
+    </TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dp"
+        android:layout_width="140dp"
+        android:layout_height="125dp"
+        android:layout_below="@+id/signuptext"
+        android:layout_marginTop="13dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/camera"
+
+        />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dp"
+        android:text="Username"
+        android:layout_alignLeft="@+id/back"
+        android:textColor="@color/white"
+        android:textSize="15dp">
+
+    </TextView>
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:backgroundTint="@color/white"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:hint="tejpatel064"
+        android:textColorHint="#E4CEC8">
+    </EditText>
+    <TextView
+        android:id="@+id/yourname"
+        android:layout_alignLeft="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etusername"
+        android:text="Your Name"
+        android:textColor="@color/white"
+        android:textSize="15dp">
+
+    </TextView>
+    <EditText
+        android:id="@+id/etyourname"
+        android:layout_width="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yourname"
+        android:backgroundTint="@color/white"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:hint="tejas"
+        android:textColorHint="#E4CEC8">
+    </EditText>
+    <TextView
+        android:id="@+id/lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/back"
+        android:layout_below="@+id/etyourname"
+        android:text="Your Last Name"
+        android:textColor="@color/white"
+        android:textSize="15dp">
+
+    </TextView>
+    <EditText
+        android:id="@+id/etlastname"
+        android:layout_width="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastname"
+        android:backgroundTint="@color/white"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:hint="patel"
+        android:textColorHint="#E4CEC8">
+    </EditText>
+    <TextView
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/back"
+        android:layout_below="@+id/etlastname"
+        android:text="Date Of Birth"
+        android:textColor="@color/white"
+        android:textSize="15dp">
+
+    </TextView>
+    <EditText
+        android:id="@+id/etdob"
+        android:layout_width="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dob"
+        android:backgroundTint="@color/white"
+        android:inputType="date"
+        android:textColor="@color/white"
+        android:hint="02-04-2004"
+        android:textColorHint="#E4CEC8">
+    </EditText>
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/back"
+        android:layout_below="@+id/etdob"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="15dp">
+
+    </TextView>
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:backgroundTint="@color/white"
+        android:inputType="text"
+        android:hint="Enter Email"
+        android:textColor="@color/white"
+        android:textColorHint="#E4CEC8">
+    </EditText>
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/back"
+        android:layout_below="@+id/etemail"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textSize="15dp">
+
+    </TextView>
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:backgroundTint="@color/white"
+        android:inputType="textPassword"
+        android:hint="*******"
+        android:textColor="@color/white"
+        android:textColorHint="#E4CEC8">
+    </EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/etpassword"
+        android:layout_marginTop="9dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonrect"
+        android:backgroundTint="#AE7675"
+        android:text="Create an Account"
+        android:textAllCaps="false"
+        android:textColor="#C2AEA7">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+
+</RelativeLayout>

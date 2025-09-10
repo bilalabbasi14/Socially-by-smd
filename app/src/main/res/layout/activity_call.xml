@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9A5A5B"
+    tools:context=".call">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/calldp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/chunkz" />
+    <TextView
+        android:id="@+id/callerid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chunkz"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/calldp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="02:13"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_below="@+id/callerid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+            <ImageView
+                android:id="@+id/declinecall"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/declincall"
+                android:layout_centerInParent="true">
+            </ImageView>
+            <ImageView
+                android:id="@+id/callchat"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/callchat"
+                android:layout_toLeftOf="@+id/declinecall"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="50dp">
+            </ImageView>
+            <ImageView
+                android:id="@+id/callVol"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/callvol"
+                android:layout_toRightOf ="@+id/declinecall"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="50dp">
+            </ImageView>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
