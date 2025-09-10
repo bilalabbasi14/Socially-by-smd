@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dm">
+<LinearLayout
+    android:id="@+id/dmabove"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:padding="8dp">
+        <ImageView
+            android:id="@+id/dmback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/coloredback2"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/plus"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/dmpageid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="abba_si"
+            android:layout_centerInParent="true"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:textColor="#8C5E61">
+            
+        </TextView>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toRightOf="@+id/dmpageid"
+            android:src="@drawable/down"
+            android:layout_centerVertical="true">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/searchdm"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/buttonrect"
+            android:backgroundTint="#EFEFEF"
+            android:paddingLeft="30dp"
+            android:hint="Search"
+            android:textColorHint="#848484">
+
+        </EditText>
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/dmsearch"
+            android:layout_centerVertical="true">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+</LinearLayout>
+    <RelativeLayout
+        android:id="@+id/dmbottom"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/dmbottomcam"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/camerafilled">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera"
+                android:paddingLeft="8dp"
+                android:textSize="21dp">
+
+            </TextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/dmbottom"
+        android:layout_below="@+id/dmabove">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/dm1"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/story"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:src="@drawable/chunkz">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:paddingLeft="12dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="chunkz"
+                        android:textSize="15dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hey man!"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/dm1cam"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_camera"
+                        android:layout_alignParentEnd="true">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=".now"
+                        android:textStyle="bold"
+                        android:layout_toLeftOf="@+id/dm1cam"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentBottom="true">
+
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/dm2"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/story"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:src="@drawable/nopfp">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:paddingLeft="12dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="aliii_awan"
+                        android:textSize="15dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="oye chor parhayi buisness krte h..."
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/dm2cam"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_camera"
+                        android:layout_alignParentEnd="true">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=".now"
+                        android:textStyle="bold"
+                        android:layout_toLeftOf="@+id/dm2cam"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentBottom="true">
+
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/dm3"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:src="@drawable/alinoorawan"
+                    app:civ_border_width="4dp"
+                    app:civ_border_color="#D1D2D1">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:paddingLeft="12dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="alinoorawan"
+                        android:textSize="15dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ali sent a reel"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/dm3cam"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_camera"
+                        android:layout_alignParentEnd="true">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=".45m"
+                        android:textStyle="bold"
+                        android:layout_toLeftOf="@+id/dm3cam"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentBottom="true">
+
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/dm4"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:src="@drawable/betasquad">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:paddingLeft="12dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="betasquad"
+                        android:textSize="15dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="wanna join the squad???"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/dm4cam"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_camera"
+                        android:layout_alignParentEnd="true">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=".now"
+                        android:textStyle="bold"
+                        android:layout_toLeftOf="@+id/dm4cam"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentBottom="true">
+
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/dm5"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:src="@drawable/nopfp">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:paddingLeft="12dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mrdampnut"
+                        android:textSize="15dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Oi Oi Oi OI Game ayega"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/dm5cam"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_camera"
+                        android:layout_alignParentEnd="true">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=".now"
+                        android:textStyle="bold"
+                        android:layout_toLeftOf="@+id/dm5cam"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentBottom="true">
+
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

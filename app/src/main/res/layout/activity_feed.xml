@@ -52,7 +52,7 @@
 
                     </ImageView>
                     <ImageView
-                        android:id="@+id/dm"
+                        android:id="@+id/dms"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/dm">
@@ -287,20 +287,20 @@
                     <ImageView
                         android:layout_width="34dp"
                         android:layout_height="34dp"
-                        android:src="@drawable/Like">
+                        android:src="@drawable/like">
 
                     </ImageView>
                     <ImageView
                         android:layout_width="34dp"
                         android:layout_height="34dp"
-                        android:src="@drawable/Comment"
+                        android:src="@drawable/comment"
                         android:layout_marginStart="12dp">
 
                     </ImageView>
                     <ImageView
                         android:layout_width="34dp"
                         android:layout_height="34dp"
-                        android:src="@drawable/Share"
+                        android:src="@drawable/share"
                         android:layout_marginStart="12dp">
 
                     </ImageView>
@@ -454,20 +454,20 @@
                     <ImageView
                         android:layout_width="34dp"
                         android:layout_height="34dp"
-                        android:src="@drawable/Like">
+                        android:src="@drawable/like">
 
                     </ImageView>
                     <ImageView
                         android:layout_width="34dp"
                         android:layout_height="34dp"
-                        android:src="@drawable/Comment"
+                        android:src="@drawable/comment"
                         android:layout_marginStart="12dp">
 
                     </ImageView>
                     <ImageView
                         android:layout_width="34dp"
                         android:layout_height="34dp"
-                        android:src="@drawable/Share"
+                        android:src="@drawable/share"
                         android:layout_marginStart="12dp">
 
                     </ImageView>
@@ -580,7 +580,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/homepage"
+            android:src="@drawable/homepagefilled"
             android:scaleType="centerInside"
             android:padding="8dp">
 

@@ -12,13 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SociallyBySMD">
         <activity
+            android:name=".opendm"
+            android:exported="false" />
+        <activity
+            android:name=".dm"
+            android:exported="false" />
+        <activity
             android:name=".call"
-            android:exported="false" />
-        <activity
-            android:name=".feed"
-            android:exported="false" />
-        <activity
-            android:name=".demo"
             android:exported="false" />
         <activity
             android:name=".login"
