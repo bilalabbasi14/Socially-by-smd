@@ -202,21 +202,27 @@
         android:textColorHint="#E4CEC8">
     </EditText>
 
-    <androidx.appcompat.widget.AppCompatButton
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signupLogin"
         android:layout_width="320dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         android:layout_height="60dp"
         android:layout_below="@id/etpassword"
-        android:layout_marginTop="9dp"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/buttonrect"
-        android:backgroundTint="#AE7675"
-        android:text="Create an Account"
-        android:textAllCaps="false"
-        android:textColor="#C2AEA7">
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="#AE7675"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:text="Create an Account"
+            android:textColor="#C2AEA7">
 
-    </androidx.appcompat.widget.AppCompatButton>
+        </TextView>
+    </androidx.cardview.widget.CardView>
 
 
 

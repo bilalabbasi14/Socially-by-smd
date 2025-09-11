@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SociallyBySMD">
         <activity
+            android:name=".highlights"
+            android:exported="false" />
+        <activity
+            android:name=".mystory"
+            android:exported="false" />
+        <activity
+            android:name=".createmystory"
+            android:exported="false" />
+        <activity
+            android:name=".story"
+            android:exported="false" />
+        <activity
+            android:name=".search"
+            android:exported="false" />
+        <activity
             android:name=".opendm"
             android:exported="false" />
         <activity

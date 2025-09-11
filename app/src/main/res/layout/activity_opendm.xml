@@ -86,6 +86,7 @@
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:background="@drawable/circle"
+            android:backgroundTint="#9A5A5B"
             android:src="@drawable/whitecamera"
             android:paddingTop="4dp"
             android:paddingBottom="5dp"

@@ -58,21 +58,27 @@
         android:layout_marginTop="10dp">
 
     </TextView>
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Login"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/buttonrect"
-        android:backgroundTint="#D19F9E"
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mainLogin"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/forgotpass"
-        android:text="Log in"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:layout_marginTop="15dp">
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="#D19F9E"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:text="Log in"
+            android:textColor="@color/white">
 
-    </androidx.appcompat.widget.AppCompatButton>
-
+        </TextView>
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/bottomsocially"
@@ -91,7 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="OR"
-        android:layout_below="@+id/Login"
+        android:layout_below="@+id/mainLogin"
         android:layout_centerHorizontal="true"
         android:textColor="#9D9D9D"
         android:textStyle="bold"
@@ -103,9 +109,9 @@
         android:layout_height="wrap_content"
         android:text="____________________"
         android:textColor="#D5D5D5"
-        android:layout_below="@+id/Login"
+        android:layout_below="@+id/mainLogin"
         android:layout_toLeftOf="@+id/or"
-        android:layout_alignLeft="@+id/Login"
+        android:layout_alignLeft="@+id/mainLogin"
         android:layout_marginTop="44dp">
 
     </TextView>
@@ -114,8 +120,8 @@
         android:layout_height="wrap_content"
         android:text="____________________"
         android:textColor="#D5D5D5"
-        android:layout_below="@+id/Login"
-        android:layout_alignRight="@+id/Login"
+        android:layout_below="@+id/mainLogin"
+        android:layout_alignRight="@+id/mainLogin"
         android:layout_marginTop="44dp">
 
     </TextView>

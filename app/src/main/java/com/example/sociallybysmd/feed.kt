@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import de.hdodenhof.circleimageview.CircleImageView
 
 class feed : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,14 +15,19 @@ class feed : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_feed)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            var systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val dm= findViewById<ImageView>(R.id.dms)
+        var dm= findViewById<ImageView>(R.id.dms)
         dm.setOnClickListener {
-            val dmsIntent= Intent(this, dm::class.java)
+            var dmsIntent= Intent(this, dm::class.java)
             startActivity(dmsIntent)
+        }
+        var storyView= findViewById<CircleImageView>(R.id.story2)
+        storyView.setOnClickListener {
+            var storyViewIntent= Intent(this, story::class.java)
+            startActivity(storyViewIntent)
         }
     }
 }

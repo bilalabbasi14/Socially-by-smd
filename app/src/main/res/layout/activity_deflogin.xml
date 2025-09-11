@@ -38,22 +38,27 @@
     android:layout_centerHorizontal="true"
     android:layout_marginTop="15dp">
 </TextView>
-    <androidx.appcompat.widget.AppCompatButton
+
+    <androidx.cardview.widget.CardView
         android:id="@+id/Logintofeed"
         android:layout_width="320dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/buttonrect"
-        android:backgroundTint="#9A5A5B"
         android:layout_below="@+id/name"
-        android:text="Log in"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:layout_marginTop="10dp">
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#9A5A5B"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:text="Log in"
+            android:textColor="@color/white">
 
-    </androidx.appcompat.widget.AppCompatButton>
+        </TextView>
+    </androidx.cardview.widget.CardView>
     <TextView
         android:id="@+id/switchacc"
         android:layout_width="wrap_content"
@@ -63,7 +68,7 @@
         android:layout_centerHorizontal="true"
         android:textColor="#9B6462"
         android:textStyle="bold"
-        android:layout_marginTop="25dp">
+        android:layout_marginTop="20dp">
 
     </TextView>
 

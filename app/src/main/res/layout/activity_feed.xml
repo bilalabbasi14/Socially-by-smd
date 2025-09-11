@@ -122,12 +122,12 @@
                             android:background="@drawable/story"
                             android:paddingTop="4dp"
                             android:paddingBottom="4dp"
-                            android:src="@drawable/chunkz">
+                            android:src="@drawable/betasquad">
                         </de.hdodenhof.circleimageview.CircleImageView>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="chunkz"
+                            android:text="betasquad"
                             android:textSize="12sp"
                             android:layout_gravity="center">
 
@@ -172,12 +172,12 @@
                             android:background="@drawable/story"
                             android:paddingTop="4dp"
                             android:paddingBottom="4dp"
-                            android:src="@drawable/betasquad">
+                            android:src="@drawable/chunkz">
                         </de.hdodenhof.circleimageview.CircleImageView>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="betasquad"
+                            android:text="chunkz"
                             android:textSize="12sp"
                             android:layout_gravity="center">
 

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".highlights">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mystoryBottomBar"
+        android:layout_marginBottom="15dp"
+        android:scaleType="center"
+        android:src="@drawable/mystorypic">
+
+    </ImageView>
+    <LinearLayout
+        android:id="@+id/mystorybar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp">
+        </View>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#B7B7B7"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp">
+        </View>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#B7B7B7"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp">
+        </View>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#B7B7B7"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp">
+        </View>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mystorybar"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/highlightspf"
+            android:layout_alignParentStart="true"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/camera"
+            >
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <TextView
+            android:id="@+id/highlighttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highlight"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/highlightspf"
+            android:layout_marginStart="10dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/highlighttext"
+            android:text="December 3,2023"
+            android:textSize="12dp"
+            android:textColor="#B4BCA4"
+            android:layout_marginStart="5dp">
+
+        </TextView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/soundwave"
+            android:layout_below="@+id/highlighttext"
+            android:layout_toRightOf="@+id/highlightspf"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artist . Song Title  >"
+            android:textColor="@color/white"
+            android:textSize="8dp"
+            android:layout_below="@+id/highlighttext"
+            android:layout_toRightOf="@+id/highlightspf"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="2dp">
+
+        </TextView>
+
+            <ImageView
+                android:id="@+id/cross"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:src="@drawable/cross"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true">
+
+            </ImageView>
+
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/mystoryBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/highlightsbottom">
+
+    </ImageView>
+
+
+</RelativeLayout>
