@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SociallyBySMD">
         <activity
+            android:name=".notificationpage2"
+            android:exported="false" />
+        <activity
+            android:name=".notificationpage1"
+            android:exported="false" />
+        <activity
+            android:name=".explorepage"
+            android:exported="false" />
+        <activity
             android:name=".highlights"
             android:exported="false" />
         <activity

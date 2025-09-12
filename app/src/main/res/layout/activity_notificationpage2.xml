@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notificationpage2">
+    <LinearLayout
+        android:id="@+id/notitopbar2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:weightSum="2"
+            android:padding="12dp">
+            <TextView
+                android:id="@+id/followingnoti2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Following"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="#A05F68"
+                android:textStyle="bold">
+
+            </TextView>
+            <TextView
+
+                android:id="@+id/younoti2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#A05F68"
+                android:textAlignment="center"
+                android:text="You"
+                android:textStyle="bold"
+                android:textSize="20dp">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:weightSum="2">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:background="#E3E3E3"
+                android:layout_weight="1"
+                >
+            </View>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:background="#A05F68"
+                android:layout_weight="1">
+            </View>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noti1btmnavigation2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="5"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/homepage"
+            android:scaleType="centerInside"
+            android:padding="8dp">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/explore">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/post"
+            >
+
+        </ImageView>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/notificationfilled"
+            >
+
+        </ImageView>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/dp">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/notitopbar2"
+        android:layout_above="@+id/noti1btmnavigation2">
+        <LinearLayout
+            android:id="@+id/activityContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Follow Requests"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#885C5E">
+                </TextView>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#E3E3E3">
+            </View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:padding="10dp">
+            </TextView>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/likedby1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/explorepic6">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/likedpic1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/pic7"
+                    android:scaleType="fitXY">
+
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/likedby1"
+                    android:layout_toLeftOf="@+id/likedpic1"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="milesmorales"
+                            android:textStyle="bold"
+                            android:textSize="16dp">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="liked your photo"
+                            android:textSize="16dp"
+                            android:layout_marginStart="5dp">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15m"
+                            android:textColor="#B7B7B7"
+                            android:textSize="16dp"
+                            android:layout_marginStart="5dp">
+
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#E3E3E3">
+            </View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:padding="10dp">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/stacked2"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/stackedpfp3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/explorepic7"
+                        android:layout_alignParentStart="true">
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/stackedpfp4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/explorepic4"
+                        android:layout_toRightOf="@+id/stackedpfp3"
+                        android:translationX="-18dp">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/likedpic2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/pic5">
+
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/stacked2"
+                    android:layout_toLeftOf="@+id/likedpic2"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sentry, robert_rey and 26 others"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_marginStart="5dp">
+
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="liked your photo"
+                            android:textSize="16dp"
+                            android:layout_marginStart="5dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8h"
+                            android:textColor="#B7B7B7"
+                            android:textSize="16dp"
+                            android:layout_marginStart="5dp">
+
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#E3E3E3">
+            </View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This Week"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:padding="10dp">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/commented"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/pic4">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/commentpic"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/pic1">
+
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/commented"
+                    android:layout_toLeftOf="@+id/commentpic"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="baller7"
+                            android:textStyle="bold"
+                            android:textSize="16dp">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="mentioned you in a "
+                            android:textSize="16dp"
+                            android:layout_marginStart="5dp">
+
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="comment:"
+                            android:textSize="16dp">
+
+                        </TextView>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/blueat"
+                            android:layout_gravity="center_vertical">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="abba._.si"
+                            android:textSize="16dp"
+                            android:textColor="#4B708D"
+                            android:layout_marginStart="1dp">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="uss"
+                            android:textSize="16dp"
+                            android:layout_marginStart="5dp">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2d"
+                            android:textColor="#B7B7B7"
+                            android:textSize="16dp"
+                            android:layout_marginStart="5dp">
+
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="85dp"
+                android:layout_marginTop="6dp">
+                <ImageView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/notification">
+
+                </ImageView>
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reply"
+                    android:textColor="#9B5A5A">
+                </TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#E3E3E3">
+            </View>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/follow1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/explorepic9">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                </RelativeLayout>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fmessage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    app:cardCornerRadius="10dp"
+                    android:layout_margin="8dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="8dp"
+                        android:gravity="center"
+                        android:text="Message"
+                        android:textSize="14dp"
+                        android:background="@drawable/card_border"/>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/follow1"
+                    android:layout_toLeftOf="@+id/fmessage1"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="antarticanomo"
+                            android:textStyle="bold"
+                            android:textSize="16dp">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="started"
+                            android:textSize="16dp"
+                            android:layout_marginStart="5dp">
+
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="following you"
+                            android:textSize="16dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2d"
+                            android:textColor="#B7B7B7"
+                            android:textSize="16dp"
+                            android:layout_marginStart="5dp">
+
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#E3E3E3">
+            </View>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/follow2"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/explorepic7">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                </RelativeLayout>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fmessage2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    app:cardCornerRadius="10dp"
+                    android:layout_margin="8dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="8dp"
+                        android:gravity="center"
+                        android:text="Message"
+                        android:textSize="14dp"
+                        android:background="@drawable/card_border"/>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/follow2"
+                    android:layout_toLeftOf="@+id/fmessage2"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="spidewewe_14"
+                            android:textStyle="bold"
+                            android:textSize="16dp">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="started"
+                            android:textSize="16dp"
+                            android:layout_marginStart="5dp">
+
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="following you"
+                            android:textSize="16dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4d"
+                            android:textColor="#B7B7B7"
+                            android:textSize="16dp"
+                            android:layout_marginStart="5dp">
+
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#E3E3E3">
+            </View>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/follow3"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/explorepic8">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                </RelativeLayout>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fmessage3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    app:cardCornerRadius="8dp"
+                    android:backgroundTint="#9A5A5B"
+                    android:layout_margin="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="8dp"
+                        android:gravity="center"
+                        android:text="Follow"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" >
+
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/follow3"
+                    android:layout_toLeftOf="@+id/fmessage3"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="doreemon"
+                            android:textStyle="bold"
+                            android:textSize="16dp">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="started"
+                            android:textSize="16dp"
+                            android:layout_marginStart="5dp">
+
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="following you"
+                            android:textSize="16dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6d"
+                            android:textColor="#B7B7B7"
+                            android:textSize="16dp"
+                            android:layout_marginStart="5dp">
+
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#E3E3E3">
+            </View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This Month"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:padding="10dp">
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

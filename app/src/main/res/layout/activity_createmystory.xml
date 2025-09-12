@@ -12,6 +12,7 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/storyBottomBar"
         android:layout_marginBottom="10dp"
+        android:scaleType="fitXY"
         android:src="@drawable/storypic">
 
     </ImageView>

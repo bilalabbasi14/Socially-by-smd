@@ -219,7 +219,9 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1.3dp"
-                android:background="#E3E3E3"></View>
+                android:background="#E3E3E3">
+
+            </View>
 
             <LinearLayout
                 android:orientation="vertical"
@@ -276,7 +278,8 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:src="@drawable/post2">
+                    android:src="@drawable/post2"
+                    android:scaleType="fitXY">
 
                 </ImageView>
                 <LinearLayout
@@ -443,7 +446,8 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:src="@drawable/post1">
+                    android:src="@drawable/post1"
+                    android:scaleType="fitXY">
 
                 </ImageView>
                 <LinearLayout
