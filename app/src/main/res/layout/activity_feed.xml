@@ -581,6 +581,7 @@
         android:padding="10dp">
 
         <ImageView
+            android:id="@+id/homepagefeed"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -590,6 +591,7 @@
 
         </ImageView>
         <ImageView
+            android:id="@+id/explorefeed"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -597,6 +599,7 @@
 
         </ImageView>
         <ImageView
+            android:id="@+id/postfeed"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -605,6 +608,7 @@
 
         </ImageView>
         <ImageView
+            android:id="@+id/notificationfeed"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -613,6 +617,7 @@
 
         </ImageView>
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilefeed"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"

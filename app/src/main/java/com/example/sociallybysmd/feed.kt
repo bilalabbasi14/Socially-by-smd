@@ -19,15 +19,30 @@ class feed : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var dm= findViewById<ImageView>(R.id.dms)
-        dm.setOnClickListener {
+        var dms=findViewById<ImageView>(R.id.dms)
+        dms.setOnClickListener {
             var dmsIntent= Intent(this, dm::class.java)
             startActivity(dmsIntent)
         }
+
         var storyView= findViewById<CircleImageView>(R.id.story2)
         storyView.setOnClickListener {
             var storyViewIntent= Intent(this, story::class.java)
             startActivity(storyViewIntent)
         }
+
+        var explore=findViewById<ImageView>(R.id.explorefeed)
+        explore.setOnClickListener {
+            var exploreIntent=Intent(this, explorepage::class.java)
+            startActivity(exploreIntent)
+        }
+
+        var notification=findViewById<ImageView>(R.id.notificationfeed)
+        notification.setOnClickListener {
+            var notificationIntent=Intent(this, notificationpage1::class.java)
+            startActivity(notificationIntent)
+        }
+
+
     }
 }

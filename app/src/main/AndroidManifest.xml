@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SociallyBySMD">
         <activity
+            android:name=".profilepage2"
+            android:exported="false" />
+        <activity
+            android:name=".profilepage"
+            android:exported="false" />
+        <activity
+            android:name=".myprofile"
+            android:exported="false" />
+        <activity
+            android:name=".editprofile"
+            android:exported="false" />
+        <activity
             android:name=".notificationpage2"
             android:exported="false" />
         <activity
