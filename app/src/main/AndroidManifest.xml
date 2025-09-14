@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SociallyBySMD">
         <activity
+            android:name=".capture"
+            android:exported="false" />
+        <activity
+            android:name=".post"
+            android:exported="false" />
+        <activity
             android:name=".profilepage2"
             android:exported="false" />
         <activity

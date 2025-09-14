@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".capture"
+    android:background="@color/black">
+    <HorizontalScrollView
+        android:id="@+id/optionscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="12dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="40dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TYPE"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#8B6167">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIVE"
+                android:textStyle="bold"
+                android:textColor="#8B6167"
+                android:textSize="14dp"
+                android:layout_marginStart="15dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NORMAL"
+                android:textStyle="bold"
+                android:textColor="#772634"
+                android:textSize="14dp"
+                android:layout_marginStart="15dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BOOMERANG"
+                android:textStyle="bold"
+                android:textColor="#8B6167"
+                android:textSize="14dp"
+                android:layout_marginStart="15dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUPERZOOM"
+                android:textStyle="bold"
+                android:textColor="#8B6167"
+                android:textSize="14dp"
+                android:layout_marginStart="15dp">
+
+            </TextView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <RelativeLayout
+        android:layout_above="@+id/optionscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/capturepic"
+            android:scaleType="fitXY">
+        </ImageView>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/wnext"
+            android:layout_alignParentEnd="true">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/settings"
+            android:layout_alignParentStart="true">
+
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/captureControls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="25dp">
+
+            <ImageView
+                android:id="@+id/btnGallerySmall"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/pic3"
+                android:scaleType="fitXY"
+                android:background="@drawable/card_border"
+                android:padding="4dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginEnd="40dp">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/flash"
+                android:layout_marginEnd="40dp">
+
+            </ImageView>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@color/white"
+                android:background="@drawable/circle"
+                android:backgroundTint="#80CCCCCC"
+                android:padding="13dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/rotate"
+                android:layout_marginStart="40dp"/>
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/smiley"
+                android:layout_marginStart="40dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

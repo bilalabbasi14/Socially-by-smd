@@ -3,6 +3,7 @@ package com.example.sociallybysmd
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -41,6 +42,27 @@ class feed : AppCompatActivity() {
         notification.setOnClickListener {
             var notificationIntent=Intent(this, notificationpage1::class.java)
             startActivity(notificationIntent)
+        }
+
+        var post=findViewById<ImageView>(R.id.postfeed)
+        post.setOnClickListener {
+            var postIntent=Intent(this, post::class.java)
+            startActivity(postIntent)
+        }
+        var profile=findViewById<ImageView>(R.id.profilefeed)
+        post.setOnClickListener {
+            var profileIntent=Intent(this, myprofile::class.java)
+            startActivity(profileIntent)
+        }
+        var niko= findViewById<TextView>(R.id.niko)
+        niko.setOnClickListener {
+            var nikoIntent=Intent(this, profilepage::class.java)
+            startActivity(nikoIntent)
+        }
+        var mystoryView= findViewById<CircleImageView>(R.id.story1)
+        mystoryView.setOnClickListener {
+            var mystoryViewIntent= Intent(this, mystory::class.java)
+            startActivity(mystoryViewIntent)
         }
 
 

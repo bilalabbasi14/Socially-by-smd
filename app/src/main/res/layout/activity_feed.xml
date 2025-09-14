@@ -242,6 +242,7 @@
 
                     </de.hdodenhof.circleimageview.CircleImageView>
                     <TextView
+                        android:id="@+id/niko"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="niko"

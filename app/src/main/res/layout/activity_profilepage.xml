@@ -13,6 +13,7 @@
         android:layout_height="50dp"
         android:padding="8dp">
         <ImageView
+            android:id="@+id/back"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/back2"
@@ -356,6 +357,7 @@
                 android:weightSum="3"
                 android:padding="8dp">
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/Followbtn"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_margin="4dp"

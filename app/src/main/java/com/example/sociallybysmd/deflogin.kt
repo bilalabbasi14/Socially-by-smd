@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -31,7 +32,7 @@ class deflogin : AppCompatActivity() {
             startActivity(switchIntent)
         }
 
-        val loginBtn =findViewById<Button>(R.id.Logintofeed)
+        val loginBtn =findViewById<CardView>(R.id.Logintofeed)
         loginBtn.setOnClickListener {
             val loginIntent= Intent(this, feed::class.java)
             startActivity(loginIntent)

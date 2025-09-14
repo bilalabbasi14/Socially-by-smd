@@ -35,5 +35,15 @@ class explorepage : AppCompatActivity() {
             var searchIntent= Intent(this, search::class.java)
             startActivity(searchIntent)
         }
+        var posting= findViewById<ImageView>(R.id.post)
+        posting.setOnClickListener {
+            var postingIntent= Intent(this, post::class.java)
+            startActivity(postingIntent)
+        }
+        var profile=findViewById<ImageView>(R.id.prof)
+        profile.setOnClickListener {
+            var profileIntent= Intent(this, profilepage::class.java)
+            startActivity(profileIntent)
+        }
     }
 }

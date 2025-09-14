@@ -16,23 +16,21 @@
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:padding="12dp">
-            <TextView
-                android:id="@+id/clear"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Clear"
-                android:textColor="#AC8988"
+            <ImageView
+                android:id="@+id/scan"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/scan"
                 android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:textSize="20dp">
+                android:layout_centerVertical="true">
 
-            </TextView>
+            </ImageView>
             <EditText
                 android:id="@+id/searchbar"
                 android:layout_width="match_parent"
                 android:layout_height="62dp"
                 android:layout_centerInParent="true"
-                android:layout_toLeftOf="@+id/clear"
+                android:layout_toLeftOf="@+id/scan"
                 android:layout_marginEnd="18dp"
                 android:background="@drawable/buttonrect"
                 android:backgroundTint="#EFEFEF"

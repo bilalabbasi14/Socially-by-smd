@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -24,7 +25,15 @@ class dm : AppCompatActivity() {
             val dmBackIntent= Intent(this, feed::class.java)
             startActivity(dmBackIntent)
         }
-
-
+        val dmOpen=findViewById<TextView>(R.id.chunkz)
+        dmOpen.setOnClickListener {
+            val dmOpenIntent= Intent(this, opendm::class.java)
+            startActivity(dmOpenIntent)
+        }
+        val camOpen= findViewById<ImageView>(R.id.dmbottomcam)
+        camOpen.setOnClickListener {
+            val camOpenIntent=Intent(this, capture::class.java)
+            startActivity(camOpenIntent)
+        }
     }
 }

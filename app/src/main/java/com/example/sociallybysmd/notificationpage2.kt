@@ -35,5 +35,15 @@ class notificationpage2 : AppCompatActivity() {
             var exploreIntent=Intent(this, feed::class.java)
             startActivity(exploreIntent)
         }
+        var posting=findViewById<ImageView>(R.id.post)
+        posting.setOnClickListener {
+            var postingIntent= Intent(this, post::class.java)
+            startActivity(postingIntent)
+        }
+        var profile=findViewById<ImageView>(R.id.prof)
+        profile.setOnClickListener {
+            var profileIntent= Intent(this, myprofile::class.java)
+            startActivity(profileIntent)
+        }
     }
 }
