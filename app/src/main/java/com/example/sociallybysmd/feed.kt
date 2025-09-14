@@ -26,12 +26,6 @@ class feed : AppCompatActivity() {
             startActivity(dmsIntent)
         }
 
-        var storyView= findViewById<CircleImageView>(R.id.story2)
-        storyView.setOnClickListener {
-            var storyViewIntent= Intent(this, story::class.java)
-            startActivity(storyViewIntent)
-        }
-
         var explore=findViewById<ImageView>(R.id.explorefeed)
         explore.setOnClickListener {
             var exploreIntent=Intent(this, explorepage::class.java)
@@ -44,13 +38,13 @@ class feed : AppCompatActivity() {
             startActivity(notificationIntent)
         }
 
-        var post=findViewById<ImageView>(R.id.postfeed)
-        post.setOnClickListener {
-            var postIntent=Intent(this, post::class.java)
-            startActivity(postIntent)
+        var posting=findViewById<ImageView>(R.id.postfeed)
+        posting.setOnClickListener {
+            var postingIntent=Intent(this, post::class.java)
+            startActivity(postingIntent)
         }
         var profile=findViewById<ImageView>(R.id.profilefeed)
-        post.setOnClickListener {
+        profile.setOnClickListener {
             var profileIntent=Intent(this, myprofile::class.java)
             startActivity(profileIntent)
         }
@@ -59,10 +53,20 @@ class feed : AppCompatActivity() {
             var nikoIntent=Intent(this, profilepage::class.java)
             startActivity(nikoIntent)
         }
+        var storyView= findViewById<CircleImageView>(R.id.story2)
+        storyView.setOnClickListener {
+            var storyViewIntent= Intent(this, story::class.java)
+            startActivity(storyViewIntent)
+        }
         var mystoryView= findViewById<CircleImageView>(R.id.story1)
         mystoryView.setOnClickListener {
             var mystoryViewIntent= Intent(this, mystory::class.java)
             startActivity(mystoryViewIntent)
+        }
+        val camOpen= findViewById<ImageView>(R.id.cams)
+        camOpen.setOnClickListener {
+            val camOpenIntent=Intent(this, capture::class.java)
+            startActivity(camOpenIntent)
         }
 
 

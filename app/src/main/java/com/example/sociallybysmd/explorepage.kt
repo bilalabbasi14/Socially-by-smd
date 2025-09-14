@@ -42,7 +42,7 @@ class explorepage : AppCompatActivity() {
         }
         var profile=findViewById<ImageView>(R.id.prof)
         profile.setOnClickListener {
-            var profileIntent= Intent(this, profilepage::class.java)
+            var profileIntent= Intent(this, myprofile::class.java)
             startActivity(profileIntent)
         }
     }

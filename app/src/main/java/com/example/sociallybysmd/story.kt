@@ -18,7 +18,7 @@ class story : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var back=findViewById<ImageView>(R.id.back)
+        var back=findViewById<ImageView>(R.id.cross)
         back.setOnClickListener {
             var backIntent=Intent(this,feed::class.java)
             startActivity(backIntent)

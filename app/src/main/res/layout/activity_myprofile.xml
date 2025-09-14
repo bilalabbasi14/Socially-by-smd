@@ -106,328 +106,327 @@
         </de.hdodenhof.circleimageview.CircleImageView>
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_below="@+id/myproftopbar"
         android:layout_above="@+id/myprofbtmnav"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
-
-        <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profileImage"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:background="@drawable/greyoval"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:src="@drawable/dp">
-
-        </de.hdodenhof.circleimageview.CircleImageView>
-
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="3"
-            android:layout_marginStart="20dp">
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <TextView
-                    android:text="9"
-                    android:textStyle="bold"
-                    android:textSize="18dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                </TextView>
-                <TextView
-                    android:text="Posts"
-                    android:textSize="14dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                </TextView>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <TextView
-                    android:text="97"
-                    android:textStyle="bold"
-                    android:textSize="18dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                </TextView>
-                <TextView
-                    android:text="Followers"
-                    android:textSize="14dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                </TextView>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <TextView
-                    android:text="141"
-                    android:textStyle="bold"
-                    android:textSize="18dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                </TextView>
-                <TextView
-                    android:text="Following"
-                    android:textSize="14dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                </TextView>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Bilal Abbasi"
-            android:textStyle="bold"
-            android:textSize="16dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Glonk"
-            android:textSize="16dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" @ababbasi14"
-            android:textColor="#4B708D"
-            android:textSize="14dp"/>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/editprofile"
-            android:layout_width="360dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="8dp">
-            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="12dp"
-                android:textAlignment="center"
-                android:text="Edit Profile"
-                android:textStyle="bold"
-                android:textColor="#975862"
-                android:background="@drawable/card_border">
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
 
-            </TextView>
-        </androidx.cardview.widget.CardView>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/greyoval"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/dp">
 
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:scrollbars="none">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                </de.hdodenhof.circleimageview.CircleImageView>
 
                 <LinearLayout
-                    android:layout_width="80dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:weightSum="3"
+                    android:layout_marginStart="20dp">
 
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="65dp"
-                            android:layout_height="65dp"
-                            android:src="@color/white"
-                            app:civ_border_width="1dp"
-                            app:civ_border_color="@color/black">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
 
-                        </de.hdodenhof.circleimageview.CircleImageView>
-                        <ImageView
+                        <TextView
+                            android:text="9"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:text="Posts"
+                            android:textSize="14dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:text="97"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <TextView
+                            android:text="Followers"
+                            android:textSize="14dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:text="141"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:text="Following"
+                            android:textSize="14dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Bilal Abbasi"
+                android:textStyle="bold"
+                android:textSize="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Glonk"
+                android:textSize="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" @ababbasi14"
+                android:textColor="#4B708D"
+                android:textSize="14dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/editprofile"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:textAlignment="center"
+                    android:text="Edit Profile"
+                    android:textStyle="bold"
+                    android:textColor="#975862"
+                    android:background="@drawable/card_border">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:src="@color/white"
+                                app:civ_border_width="1dp"
+                                app:civ_border_color="@color/black">
+
+                            </de.hdodenhof.circleimageview.CircleImageView>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/plus">
+                            </ImageView>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:text="New"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:src="@drawable/plus">
-                        </ImageView>
-                    </RelativeLayout>
+                            android:gravity="center">
 
-                    <TextView
-                        android:text="New"
-                        android:layout_width="wrap_content"
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content"
+                        android:orientation="vertical"
                         android:gravity="center">
 
-                    </TextView>
-                </LinearLayout>
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/highlight1"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:background="@drawable/greyoval"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:src="@drawable/bird">
+                        </de.hdodenhof.circleimageview.CircleImageView>
 
-                <LinearLayout
-                    android:layout_width="80dp"
+                        <TextView
+                            android:text="Birds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/highlight2"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:background="@drawable/greyoval"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:src="@drawable/pic7">
+                        </de.hdodenhof.circleimageview.CircleImageView>
+
+                        <TextView
+                            android:text="Cricket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/highlight3"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:background="@drawable/greyoval"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:src="@drawable/pic4">
+                        </de.hdodenhof.circleimageview.CircleImageView>
+
+                        <TextView
+                            android:text="Football"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                        </TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:weightSum="2">
+                <ImageView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:layout_weight="1"
+                    android:src="@drawable/grid">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/highlight1"
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        android:background="@drawable/greyoval"
-                        android:paddingTop="4dp"
-                        android:paddingBottom="4dp"
-                        android:src="@drawable/bird">
-                    </de.hdodenhof.circleimageview.CircleImageView>
-
-                    <TextView
-                        android:text="Birds"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center">
-
-                    </TextView>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="80dp"
+                </ImageView>
+                <ImageView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:layout_weight="1"
+                    android:src="@drawable/tag">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/highlight2"
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        android:background="@drawable/greyoval"
-                        android:paddingTop="4dp"
-                        android:paddingBottom="4dp"
-                        android:src="@drawable/pic7">
-                    </de.hdodenhof.circleimageview.CircleImageView>
-
-                    <TextView
-                        android:text="Cricket"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center">
-
-                    </TextView>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/highlight3"
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        android:background="@drawable/greyoval"
-                        android:paddingTop="4dp"
-                        android:paddingBottom="4dp"
-                        android:src="@drawable/pic4">
-                    </de.hdodenhof.circleimageview.CircleImageView>
-
-                    <TextView
-                        android:text="Football"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center">
-
-                    </TextView>
-                </LinearLayout>
-
+                </ImageView>
             </LinearLayout>
-        </HorizontalScrollView>
-
-        <View
-            android:layout_marginTop="12dp"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#E0E0E0">
-
-        </View>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:gravity="center_vertical"
-            android:weightSum="2">
-            <ImageView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/grid">
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="2">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1.5dp"
+                    android:background="#A05F68"
+                    android:layout_weight="1">
+                </View>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1.5dp"
+                    android:background="#E3E3E3"
+                    android:layout_weight="1"
+                    >
+                </View>
+            </LinearLayout>
 
-            </ImageView>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/tag">
-
-            </ImageView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:weightSum="2">
-            <View
-                android:layout_width="0dp"
-                android:layout_height="1.5dp"
-                android:background="#A05F68"
-                android:layout_weight="1">
-            </View>
-            <View
-                android:layout_width="0dp"
-                android:layout_height="1.5dp"
-                android:background="#E3E3E3"
-                android:layout_weight="1"
-                >
-            </View>
-        </LinearLayout>
-
-        <ScrollView
-            android:id="@+id/explorescroll"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -500,10 +499,10 @@
 
 
             </GridLayout>
-        </ScrollView>
+        </LinearLayout>
+    </ScrollView>
 
 
-    </LinearLayout>
 
 
 </RelativeLayout>

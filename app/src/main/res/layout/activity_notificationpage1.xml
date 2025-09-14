@@ -152,7 +152,7 @@
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="15dp">
+                    android:layout_marginStart="10dp">
 
                 </TextView>
                 <TextView
@@ -252,10 +252,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="alinoorawan,chunkz and niko"
+                            android:text="alinoorawan,chunkz"
                             android:textStyle="bold"
                             android:textSize="16dp"
-                            android:layout_marginStart="5dp">
+                            android:layout_marginStart="3dp">
 
                         </TextView>
                         <LinearLayout
@@ -267,16 +267,16 @@
                                 android:layout_height="wrap_content"
                                 android:text="liked"
                                 android:textSize="16dp"
-                                android:layout_marginStart="5dp">
+                                android:layout_marginStart="3dp">
 
                             </TextView>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="milesmorales"
+                                android:text="miles42"
                                 android:textStyle="bold"
                                 android:textSize="16dp"
-                                android:layout_marginStart="5dp">
+                                android:layout_marginStart="3dp">
 
                             </TextView>
                             <TextView
@@ -284,7 +284,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="photo"
                                 android:textSize="16dp"
-                                android:layout_marginStart="5dp">
+                                android:layout_marginStart="3dp">
 
                             </TextView>
                             <TextView
@@ -293,7 +293,7 @@
                                 android:text="3h"
                                 android:textColor="#B7B7B7"
                                 android:textSize="16dp"
-                                android:layout_marginStart="5dp">
+                                android:layout_marginStart="3dp">
 
                             </TextView>
                         </LinearLayout>
@@ -320,7 +320,7 @@
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="20dp">
+                    android:layout_marginStart="10dp">
 
                 </TextView>
                 <TextView
@@ -329,7 +329,7 @@
                     android:text="started following"
                     android:textSize="16dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="5dp">
+                    android:layout_marginStart="3dp">
 
                 </TextView>
                 <TextView
@@ -339,7 +339,7 @@
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="5dp">
+                    android:layout_marginStart="3dp">
 
                 </TextView>
                 <TextView
@@ -349,7 +349,7 @@
                     android:textColor="#B7B7B7"
                     android:textSize="16dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="5dp">
+                    android:layout_marginStart="3dp">
 
                 </TextView>
 
@@ -372,7 +372,7 @@
                     android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="20dp">
+                    android:layout_marginStart="10dp">
 
                 </TextView>
                 <TextView
@@ -524,10 +524,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="alinoorawan,greizmann_seven"
+                        android:text="alinoorawan,greizmann_7"
                         android:textStyle="bold"
                         android:textSize="16dp"
-                        android:layout_marginStart="5dp">
+                        android:layout_marginStart="3dp">
 
                     </TextView>
                     <LinearLayout
@@ -539,7 +539,7 @@
                             android:layout_height="wrap_content"
                             android:text="liked"
                             android:textSize="16dp"
-                            android:layout_marginStart="5dp">
+                            android:layout_marginStart="3dp">
 
                         </TextView>
                         <TextView
@@ -548,7 +548,7 @@
                             android:text="spideywew"
                             android:textStyle="bold"
                             android:textSize="16dp"
-                            android:layout_marginStart="5dp">
+                            android:layout_marginStart="3dp">
 
                         </TextView>
                         <TextView
@@ -556,7 +556,7 @@
                             android:layout_height="wrap_content"
                             android:text="photo"
                             android:textSize="16dp"
-                            android:layout_marginStart="5dp">
+                            android:layout_marginStart="3dp">
 
                         </TextView>
                         <TextView
@@ -618,7 +618,7 @@
                             android:text="baller7"
                             android:textStyle="bold"
                             android:textSize="16dp"
-                            android:layout_marginStart="5dp">
+                            android:layout_marginStart="3dp">
 
                         </TextView>
                         <TextView

@@ -55,22 +55,19 @@
             android:layout_height="40dp"
             android:layout_margin="4dp"
             android:layout_weight="1"
-            app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="@android:color/transparent"
-            app:cardPreventCornerOverlap="true">
+            app:cardCornerRadius="10dp">
             <LinearLayout
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="8dp"
                 android:background="@drawable/card_border">
 
                 <ImageView
                     android:src="@drawable/shopicon"
                 android:layout_width="15dp"
                 android:layout_height="15dp"
-                android:layout_marginEnd="5dp">
+                android:layout_marginEnd="2dp">
 
                 </ImageView>
 
@@ -90,9 +87,7 @@
             android:layout_height="40dp"
             android:layout_margin="4dp"
             android:layout_weight="1"
-            app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="@android:color/transparent"
-            app:cardPreventCornerOverlap="true">
+            app:cardCornerRadius="10dp">
 
             <TextView
                 android:text="Style"
@@ -111,9 +106,7 @@
             android:layout_height="40dp"
             android:layout_margin="4dp"
             android:layout_weight="1"
-            app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="@android:color/transparent"
-            app:cardPreventCornerOverlap="true">
+            app:cardCornerRadius="10dp">
 
             <TextView
                 android:text="Sports"
@@ -132,9 +125,7 @@
             android:layout_height="40dp"
             android:layout_margin="4dp"
             android:layout_weight="1"
-            app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="@android:color/transparent"
-            app:cardPreventCornerOverlap="true">
+            app:cardCornerRadius="10dp">
 
             <TextView
                 android:text="Auto"
@@ -153,9 +144,7 @@
             android:layout_height="40dp"
             android:layout_margin="4dp"
             android:layout_weight="1"
-            app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="@android:color/transparent"
-            app:cardPreventCornerOverlap="true">
+            app:cardCornerRadius="10dp">
 
             <TextView
                 android:text="Music"

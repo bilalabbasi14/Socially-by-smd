@@ -202,7 +202,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="milesmorales"
+                            android:text="milesm4"
                             android:textStyle="bold"
                             android:textSize="16dp">
 
@@ -212,7 +212,7 @@
                             android:layout_height="wrap_content"
                             android:text="liked your photo"
                             android:textSize="16dp"
-                            android:layout_marginStart="5dp">
+                            android:layout_marginStart="3dp">
 
                         </TextView>
                         <TextView
@@ -221,7 +221,7 @@
                             android:text="15m"
                             android:textColor="#B7B7B7"
                             android:textSize="16dp"
-                            android:layout_marginStart="5dp">
+                            android:layout_marginStart="3dp">
 
                         </TextView>
                     </LinearLayout>
@@ -396,20 +396,12 @@
                             android:textSize="16dp">
 
                         </TextView>
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/blueat"
-                            android:layout_gravity="center_vertical">
-
-                        </ImageView>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="abba._.si"
+                            android:text=" @abba._.si"
                             android:textSize="16dp"
-                            android:textColor="#4B708D"
-                            android:layout_marginStart="1dp">
+                            android:textColor="#4B708D">
 
                         </TextView>
                         <TextView
@@ -510,7 +502,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="antarticanomo"
+                            android:text="pengs23"
                             android:textStyle="bold"
                             android:textSize="16dp">
 
@@ -603,7 +595,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="spidewewe_14"
+                            android:text="spidewew"
                             android:textStyle="bold"
                             android:textSize="16dp">
 
