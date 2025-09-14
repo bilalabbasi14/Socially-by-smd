@@ -6,6 +6,7 @@ import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import de.hdodenhof.circleimageview.CircleImageView
@@ -25,6 +26,12 @@ class Page2 : AppCompatActivity() {
             val gobackIntent= Intent(this, login::class.java)
             startActivity(gobackIntent)
         }
+        val loginBtn =findViewById<CardView>(R.id.signupLogin)
+        loginBtn.setOnClickListener {
+            val loginIntent= Intent(this, login::class.java)
+            startActivity(loginIntent)
+        }
+
 
         var dp = findViewById<CircleImageView>(R.id.dp)
         var launcher= registerForActivityResult(

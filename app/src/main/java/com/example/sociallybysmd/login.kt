@@ -6,6 +6,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -31,5 +32,12 @@ class login : AppCompatActivity() {
             val goback2Intent= Intent(this, deflogin::class.java)
             startActivity(goback2Intent)
         }
+
+        val loginBtn =findViewById<CardView>(R.id.mainLogin)
+        loginBtn.setOnClickListener {
+            val loginIntent= Intent(this, feed::class.java)
+            startActivity(loginIntent)
+        }
+
     }
 }
